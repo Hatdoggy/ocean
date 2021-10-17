@@ -2,42 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="text/javascript">
+      window.txt = {
+        title: "OCEAN SPINNER",
+        greet: {
+          img: {
+            img: "./img/greet.png",
+            alt: "greet",
+          },
+          head: "We reserved (3) spins for the 3 winners today!",
+          mes: `Spins is reserved for for 72 hours from you enter this page! We wish you good luck with your spins and thanks for participating!`,
+          user: `This bonus is exclusively locked for `,
+          btn: "Let's Start",
+        },
+        terms:
+          "This is a advertisement page done by a third party advertiser and NOT the casino promoted. You must be 18 or older (or the legal age of gambling in your state) to use our page. Also you must accept we use cookies to enrich your experience.",
+        mes: "Your 3 Free Spins is valid until end of ",
+        stats: {
+          spins: {
+            label: "SPINS LEFT",
+            val: 3,
+          },
+          bank: {
+            label: "BANK",
+            val: 250,
+          },
+        },
+        pop: {
+          lose1: {
+            img: "./img/boat.png",
+            alt: "boat",
+            head: "Oh no! Rest up Its just a sunken boat",
+            head2: "YOU HAVE 2 SPINS LEFT",
+            mes: "Its just a sunken boat, boat don't worry you'll find more dont give up and just keep going deep!",
+            btn: "SPIN AGAIN",
+          },
+          lose2: {
+            img: "./img/sub.png",
+            alt: "sub",
+            head: "You almost won! Dive deep and keep searching",
+            head2: "YOU HAVE 1 SPINS LEFT",
+            mes: "Just a little bit more, the treasure is near and you'll finally be rich!",
+            btn: "SPIN AGAIN",
+          },
+          win: {
+            img: "./img/jackpot.png",
+            alt: "jackpot",
+            head: "YOU HAVE FOUND THE TREASURE!",
+            head2: "CONGRATULATIONS!",
+            mes: "You got yourself a vacation! We have reserved 55 FREE Spins for you for just $1 - You can claim up to $800 in bonuses today!",
+            btn: "CLAIM YOUR PRIZE",
+          },
+        },
+      };
+    </script>
+    <title>Ocean Spinner</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <body class="bg-img h-vh ovr-hide">
+    <div id="root" class="h-100 w-100"></div>
   </body>
 </html>
